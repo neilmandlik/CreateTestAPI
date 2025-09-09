@@ -1,0 +1,434 @@
+{
+	"info": {
+		"_postman_id": "d3d263d6-a1cc-4b8a-b767-52beb8f3d657",
+		"name": "Create User API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37243737"
+	},
+	"item": [
+		{
+			"name": "Used Mail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "roll-number",
+						"value": "2223215",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Neil\",\r\n  \"lastName\": \"Mandlik\",\r\n  \"phoneNumber\": 8308811309,\r\n  \"emailId\": \"nrm110604@gmail.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/create/user",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"create",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authentication",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "roll-number",
+						"value": "2223215",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Neil\",\r\n  \"lastName\": \"Mandlik\",\r\n  \"phoneNumber\": 8308811309,\r\n  \"emailId\": \"nrm1106045@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://createtestuser.in/automation-campus/disabled/create/user",
+					"protocol": "https",
+					"host": [
+						"createtestuser",
+						"in"
+					],
+					"path": [
+						"automation-campus",
+						"disabled",
+						"create",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Used_Number",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "roll-number",
+						"value": "2223215",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Neil\",\r\n  \"lastName\": \"Mandlik\",\r\n  \"phoneNumber\": 8308811308,\r\n  \"emailId\": \"nrm110604@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/create/user",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"create",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change User Name",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "roll-number",
+						"value": "222191",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Aditya\",\r\n  \"lastName\": \"Singh\",\r\n  \"phoneNumber\": 9139301150,\r\n  \"emailId\": \"variableguy@gmail.com\"\r\n}"
+				},
+				"url": {
+					"raw": "{{domain}}/create/user",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"create",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Phone Number Break",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "roll-number",
+						"value": "   2223215   ",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Neil\",\r\n  \"lastName\": \"Mandlik\",\r\n  \"phoneNumber\": 82781736763,\r\n  \"emailId\": \"variablegu@gmail.com\"\r\n}"
+				},
+				"url": {
+					"raw": "{{domain}}/create/user",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"create",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Email Break",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "roll-number",
+						"value": "   2223372",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Neil\",\r\n  \"lastName\": \"Mandlik\",\r\n  \"phoneNumber\": 82898989990,\r\n  \"emailId\": \"variablegu@gmaom\"\r\n}"
+				},
+				"url": {
+					"raw": "{{domain}}/create/user",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"create",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "First Name Break",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "roll-number",
+						"value": "   2223372",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"\",\r\n  \"lastName\": \"Mandlik\",\r\n  \"phoneNumber\": 82898989990,\r\n  \"emailId\": \"variableg@gma.com\"\r\n}"
+				},
+				"url": {
+					"raw": "{{domain}}/create/user",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"create",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Last Name Break",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "roll-number",
+						"value": "2223215",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Neil\",\r\n  \"lastName\": \"\",\r\n  \"phoneNumber\": 8308811309,\r\n  \"emailId\": \"nrm110604@gmail.co\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/create/user",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"create",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Invalid Content Type",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/ecmascript",
+						"type": "text"
+					},
+					{
+						"key": "roll-number",
+						"value": "2223215",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Neil\",\r\n  \"lastName\": \"\",\r\n  \"phoneNumber\": 8308811309,\r\n  \"emailId\": \"nrm110604@gmail.co\"\r\n}"
+				},
+				"url": {
+					"raw": "{{domain}}/create/user",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"create",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Invalid Roll Number",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "roll-number",
+						"value": "2223215P",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Neil\",\r\n  \"lastName\": \"\",\r\n  \"phoneNumber\": 8308811309,\r\n  \"emailId\": \"nrm110604@gmail.co\"\r\n}"
+				},
+				"url": {
+					"raw": "{{domain}}/create/user",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"create",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Duplicate User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "roll-number",
+						"value": "22232120",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Neil\",\r\n  \"lastName\": \"Mandlik\",\r\n  \"phoneNumber\": 8308811319,\r\n  \"emailId\": \"nrm110604@gmai.com\"\r\n}"
+				},
+				"url": {
+					"raw": "{{domain}}/create/user",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"create",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "domain",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
