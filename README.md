@@ -34,6 +34,7 @@ All tests were built and executed in **Postman**.
 
 ## 📂 Repository Contents
 - `CreateUserAPI.postman_collection.json` — Postman collection containing all test cases.
+-  `/screenshots` — Screenshots of request & response for each test case.
 
 ---
 
