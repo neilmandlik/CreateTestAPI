@@ -34,12 +34,10 @@ All tests were built and executed in **Postman**.
 
 ## 📂 Repository Contents
 - `CreateUserAPI.postman_collection.json` — Postman collection containing all test cases.
-- (Optional) `CreateUserAPI.postman_environment.json` — If you used environment variables.
-- `/screenshots` — Screenshots of request & response for each test case (if included).
 
 ---
 
 ## 🚀 How to Use
 1. Clone this repository:
    ```bash
-   git clone https://github.com/<your-username>/<your-repo>.git
+   git clone https://github.com/neilmandlik/CreateTestApi.git
